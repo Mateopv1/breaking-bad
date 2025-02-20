@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breaking Bad – Que comience el juego!</title>
+  </head>
+  <body class="formulario-body">
+    <h1>Breaking Bad – Que comience el juego!</h1>
+
+    <form
+      action="mailto:raul.rodriguez@proeducaglobal.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label>Nombre: <input type="text" name="nombre" required /></label
+        ><br />
+        <label>Apellidos: <input type="text" name="apellidos" required /></label
+        ><br />
+        <label>Calle: <input type="text" name="calle" /></label><br />
+        <label>Número: <input type="text" name="numero" /></label><br />
+        <label>Piso: <input type="text" name="piso" /></label><br />
+        <label>Código Postal: <input type="text" name="cp" /></label><br />
+        <label>Ciudad: <input type="text" name="ciudad" /></label><br />
+        <label>DNI: <input type="text" name="dni" /></label><br />
+        <label
+          >Correo Electrónico:
+          <input type="email" name="email" required /></label
+        ><br />
+      </fieldset>
+
+      <fieldset class="GENERO">
+        <legend>Género</legend>
+        <div class="genero-container">
+          <label for="hombre">
+            <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+          </label>
+          <label for="mujer">
+            <input type="radio" id="mujer" name="sexo" value="mujer" /> Mujer
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fecha de Nacimiento</legend>
+        <input type="date" name="fecha_nacimiento" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Personaje Favorito</legend>
+        <select name="personaje">
+          <option value="jessie">Jessie Pinkman</option>
+          <option value="walter">Walter White</option>
+          <option value="saul">Saul Goodman</option>
+          <option value="gus">Gustavo Fring</option>
+          <option value="pollos">Pollos Hermanos</option>
+          <option value="otros">Otros personajes</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentarios</legend>
+        <textarea name="comentarios" rows="5" cols="40"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Adjuntar Archivo</legend>
+        <input type="file" name="archivo" />
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar</button>
+    </form>
+  </body>
+</html>
